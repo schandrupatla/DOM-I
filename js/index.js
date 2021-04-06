@@ -75,15 +75,8 @@ navLinks.prepend (child2);
  //const headerOne = document.getElementsByTagName("h1");
 const headerOne = document.querySelector(" .cta-text h1");
 headerOne.textContent = siteContent.cta["h1"];
-// const br = document.createElement("br");
-// br.textContent = "Is";
-// headerOne.appendChild(br);
-// const br2 = document.createElement("br");
-// br2.textContent = "Awesome";
-// headerOne.appendChild(br2);
-console.log(headerOne);
-
-//headerOne.textContent = "DOM<br> Is<br> Awesome<br>";
+const str = "DOM<br> Is<br> Awesome";
+headerOne.innerHTML = str;
 
 //button
 //const btn = document.getElementsByTagName("button");
@@ -129,7 +122,6 @@ bottomContentP3.textContent =  siteContent["main-content"]["vision-content"];
 
 //Contact
 const contactH4 = document.querySelector(".contact h4");
-console.log(contactH4);
 contactH4.textContent = siteContent.contact["contact-h4"];
 const contactP1 = document.querySelector(".contact p:nth-of-type(1)");
 contactP1.textContent =  siteContent.contact["address"];
